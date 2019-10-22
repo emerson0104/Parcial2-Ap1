@@ -53,10 +53,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\FActuraBLL.cs" />
     <Compile Include="BLL\IRepository.cs" />
     <Compile Include="BLL\RepositorioBase.cs" />
     <Compile Include="DAL\Contexto.cs" />
     <Compile Include="Entidades\Categorias.cs" />
+    <Compile Include="Entidades\DetalleFactura.cs" />
+    <Compile Include="Entidades\facturar.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -12,21 +12,13 @@ namespace Parcial2Ap1.Entidades
         [Key]
         public int CategoriaId { get; set; }
         public string Descripcion { get; set; }
-        /* public Categorias(int CategoriaId, string Descripcion)
+         public Categorias()
          {
-             CategoriaId = 0;
-             Descripcion = string.Empty;
-         }*/
-        public Categorias(int categoriaID, string nombre)
-        {
-            CategoriaId = categoriaID;
-            Descripcion = nombre;
-        }
-
-        public Categorias()
-        {
-
-        }
+             
+         }
+        
+        
+        
     }
     }
 
