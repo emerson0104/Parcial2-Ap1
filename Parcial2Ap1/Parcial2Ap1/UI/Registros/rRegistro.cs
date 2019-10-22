@@ -69,7 +69,9 @@ namespace Parcial2Ap1.UI.Registros
             TotaltextBox.Text = f.Total.ToString();
             DetalledataGridView.DataSource = f.Detalles;
 
-
+            f.Detalles = this.Detalle;
+            DetalledataGridView.DataSource = null;
+            DetalledataGridView.DataSource = Detalle;
         }
 
         private bool Existe()
