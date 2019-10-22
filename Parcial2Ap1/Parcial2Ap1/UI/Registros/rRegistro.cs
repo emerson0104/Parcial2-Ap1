@@ -27,8 +27,8 @@ namespace Parcial2Ap1.UI.Registros
 
         private void LlenaComboBox()
         {
-            RepositorioBase<facturar> repositorio = new RepositorioBase<facturar>();
-            List<facturar> lista = new List<facturar>();
+            RepositorioBase<Categorias> repositorio = new RepositorioBase<Categorias>();
+            List<Categorias> lista = new List<Categorias>();
             lista = repositorio.GetList(p => true);
 
             CategoriacomboBox.DataSource = lista;
@@ -160,7 +160,7 @@ namespace Parcial2Ap1.UI.Registros
 
         private void Agregarbutton_Click(object sender, EventArgs e)
         {
-            List<DetalleFactura> Detalle = new List<DetalleFactura>();
+       
 
             if (DetalledataGridView.DataSource != null)
             {
@@ -179,7 +179,7 @@ namespace Parcial2Ap1.UI.Registros
                     Combo: (int)CategoriacomboBox.SelectedValue,
                     cantidad: Convert.ToInt32(numericUpDownCantida.Value),
                     precio: Convert.ToDecimal(PreciotextBox.Text),
-                    importe: Convert.ToDecimal(ImportetextBox)
+                    importe: Convert.ToDecimal(ImportetextBox.Text)
                  )
              );
                 
