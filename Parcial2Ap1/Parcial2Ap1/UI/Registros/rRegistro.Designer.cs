@@ -283,6 +283,7 @@
             this.PreciotextBox.Name = "PreciotextBox";
             this.PreciotextBox.Size = new System.Drawing.Size(79, 20);
             this.PreciotextBox.TabIndex = 19;
+            this.PreciotextBox.TextChanged += new System.EventHandler(this.PreciotextBox_TextChanged);
             // 
             // ImportetextBox
             // 

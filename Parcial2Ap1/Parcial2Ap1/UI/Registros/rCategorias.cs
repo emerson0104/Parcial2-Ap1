@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Parcial2Ap1.UI.Registros;
 namespace Parcial2Ap1.UI.Registros
 {
     public partial class rCategorias : Form
@@ -99,6 +99,7 @@ namespace Parcial2Ap1.UI.Registros
             {
                 MessageBox.Show("NO SE PUDO GUARDAR", "NO GUARDADA", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
 
         private void Eliminarbutton_Click(object sender, EventArgs e)

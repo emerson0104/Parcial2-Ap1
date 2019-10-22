@@ -267,6 +267,11 @@ namespace Parcial2Ap1.UI.Registros
 
         private void NumericUpDownCantida_ValueChanged(object sender, EventArgs e)
         {
+            
+        }
+
+        private void PreciotextBox_TextChanged(object sender, EventArgs e)
+        {
             ImportetextBox.Text = FActuraBLL.CalcularImporte(Convert.ToDecimal(PreciotextBox.Text),
                Convert.ToInt32(numericUpDownCantida.Value)).ToString();
         }
